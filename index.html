@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <style>
+        .intro {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .highlight {
+            display: inline-block;
+            color: #ff4500; /* Adjust the color if necessary */
+        }
+
+        .animated-text {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 0.15em solid orange;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: orange; }
+        }
+
+        .changing-text {
+            display: inline-block;
+            animation: fade 2s infinite;
+        }
+
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <h1>Hi There,<br>  <span class="highlight animated-text">I'm Harsh Jangid</span></h1>
+            <p><span class="changing-text">Web Developer</span></p>
+            <a href="#" class="btn">About Me</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/harshjangid015"><img src="linked.png" alt="LinkedIn"></a>
+                <a href="https://github.com/Harshjangid015"><img src="git.png" alt="GitHub"></a>
+            </div>
+        </div>
+        <div class="avatar">
+            <img src="avtar.png" alt="Avatar">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Harsh Jangid, currently pursuing my Bachelor of Computer Applications (BCA) from Christ University, Bangalore. Passionate about exploring the dynamic world of technology, I'm enthusiastic about honing my skills in various aspects of computer science, including programming, data analysis, and software development.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p> 1. Web: HTML, CSS, JavaScript <br>
+            2. Programming Languages: Python, Java, Kotlin <br>
+            3. Database: SQL, NoSql, PHP, MOngodb <br>
+            4. Tools: PowerBI, Canva, Tally, MS Office, Figma, Android Studio, Lens Studio, Canva, Pycharm</p>
+    </section>
+
+    <!-- <section id="projects">
+        <h2>Projects</h2>
+        <p></p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p></p>
+    </section> -->
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email : harshjangid015@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Harsh Jangid. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const changingText = document.querySelector('.changing-text');
+            const texts = ["Web Development", "UI/UX Design"];
+            let index = 0;
+
+            setInterval(() => {
+                index = (index + 1) % texts.length;
+                changingText.textContent = texts[index];
+            }, 2000); // Change text every 2 seconds
+        });
+    </script>
+</body>
+</html>
