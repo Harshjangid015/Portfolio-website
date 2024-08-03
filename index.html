@@ -1,58 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/x-icon">
-    <style>
-        .intro {
-            text-align: center;
-            padding: 100px 20px;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
-        .highlight {
-            display: inline-block;
-            color: #ff4500; /* Adjust the color if necessary */
-        }
-
-        .animated-text {
-            display: inline-block;
-            overflow: hidden;
-            white-space: nowrap;
-            border-right: 0.15em solid orange;
-            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-        }
-
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: orange; }
-        }
-
-        .changing-text {
-            display: inline-block;
-            animation: fade 2s infinite;
-        }
-
-        @keyframes fade {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-    </style>
 </head>
+
 <body>
     <header>
         <nav>
-            <div class="logo">My Portfolio</div>
+            <div class="logo">Harsh Jangid</div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about-me">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -61,47 +29,217 @@
         </nav>
     </header>
 
-    <section id="home">
+    <section class="home">
         <div class="intro">
-            <h1>Hi There,<br>  <span class="highlight animated-text">I'm Harsh Jangid</span></h1>
+            <h1>Hi There,<br> <span class="highlight animated-text">I'm Harsh Jangid</span></h1>
             <p><span class="changing-text">Web Developer</span></p>
-            <a href="#" class="btn">About Me</a>
+            <a href="https://drive.google.com/file/d/1yxLkr9MRktTjiM5Eq8gMjYTdzL5zCjxf/view?usp=sharing" target="_blank" class="btn">Resume</a>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/harshjangid015"><img src="linked.png" alt="LinkedIn"></a>
-                <a href="https://github.com/Harshjangid015"><img src="git.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/harshjangid015" target="_blank"><img src="img\linked.png"
+                        alt="LinkedIn"></a>
+                <a href="https://github.com/Harshjangid015" target="_blank"><img src="img\git.png" alt="GitHub"></a>
             </div>
         </div>
         <div class="avatar">
-            <img src="avtar.png" alt="Avatar">
+            <img src="img\avtar.png" alt="Avatar">
+
         </div>
     </section>
 
-    <section id="about">
+    <section class="about-me" id="about-me">
         <h2>About Me</h2>
-        <p>Hello! I'm Harsh Jangid, currently pursuing my Bachelor of Computer Applications (BCA) from Christ University, Bangalore. Passionate about exploring the dynamic world of technology, I'm enthusiastic about honing my skills in various aspects of computer science, including programming, data analysis, and software development.</p>
+        <p>
+            Hello! I'm Harsh Jangid, currently pursuing my Bachelor of Computer Applications (BCA) from Christ
+            University, Bangalore. Passionate about exploring the dynamic world of technology, I'm enthusiastic about
+            honing my skills in various aspects of computer science, including programming, data analysis, and software
+            development.
+        </p>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
-        <p> 1. Web: HTML, CSS, JavaScript <br>
-            2. Programming Languages: Python, Java, Kotlin <br>
-            3. Database: SQL, NoSql, PHP, MOngodb <br>
-            4. Tools: PowerBI, Canva, Tally, MS Office, Figma, Android Studio, Lens Studio, Canva, Pycharm</p>
+        <h2>Skills</h2> <br>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Web</h3> <br>
+                <div class="skill-item">
+                    <img src="img/html.webp" alt="HTML">
+                    <span>HTML</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/css.webp" alt="CSS">
+                    <span>CSS</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/js.png" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Programming Languages</h3> <br>
+                <div class="skill-item">
+                    <img src="img/python.png" alt="Python">
+                    <span>Python</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/java.webp" alt="Java">
+                    <span>Java</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/kotlin.png" alt="Kotlin">
+                    <span>Kotlin</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Database</h3> <br>
+                <div class="skill-item">
+                    <img src="img/sql.png" alt="SQL">
+                    <span>SQL</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/nosql.png" alt="NoSQL">
+                    <span>NoSQL</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/php.png" alt="PHP">
+                    <span>PHP</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/mongodb.svg" alt="MongoDB">
+                    <span>MongoDB</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools</h3> <br>
+                <div class="skill-item">
+                    <img src="img/powerbi.png" alt="PowerBI">
+                    <span>PowerBI</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/canva.png" alt="Canva">
+                    <span>Canva</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/tally.png" alt="Tally">
+                    <span>Tally</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/msoffice.png" alt="MS Office">
+                    <span>MS Office</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/figma.png" alt="Figma">
+                    <span>Figma</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/androidstudio.png" alt="Android Studio">
+                    <span>Android Studio</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/lens_studio.png" alt="Lens Studio">
+                    <span>Lens Studio</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/pycharm.png" alt="Pycharm">
+                    <span>Pycharm</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/intellij.png" alt="Pycharm">
+                    <span>IntelliJ IDEA</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- <section id="projects">
+    <section id="projects">
         <h2>Projects</h2>
-        <p></p>
+        <div class="projects-container">
+
+
+            <div class="project-item">
+                <img src="img/khanak (2).png" class="img2" alt="khanak"> 
+                <h3>KHANAK | An E-commerce Jewelry Website</h3>
+                <p>Designed and implemented a comprehensive full-stack web application for an online jewelry store using
+                    HTML, CSS, JavaScript, Bootstrap, MySQL, and PHP where users can browse 70+ products.</p>
+                <a href="https://github.com/Harshjangid015/Khanak-Ecommerce-jewellery-website" target="_blank"
+                    class="btn">GitHub</a>
+                <!-- <a href="#" class="btn">Demo</a> -->
+            </div>
+            <div class="project-item">
+                <img src="img/Expense tracker.png" alt="expense tracker" class="img2"> 
+                <h3>EXPENSE TRACKER | Expense Management Website</h3>
+                <p>Developed a mini-project for personalized expense tracking using HTML, CSS, and JavaScript, allowing
+                    users to add and manage over 100+ transactions, with an option to download their transaction history
+                    for detailed financial monitoring.</p>
+                <a href="https://github.com/Harshjangid015/Expense-Tracker" target="_blank" class="btn">GitHub</a>
+                <a href="https://expense-tracker-indol-two.vercel.app/" target="_blank" class="btn">Live</a>
+            </div>
+            <div class="project-item">
+                <img src="img/eduvents.png" alt="EduVents" class="img2">
+                <h3>EDUVENTS | College Event Management Website</h3>
+                <p>Currently developing a student registration system for college events using the MERN stack. The
+                    platform will allow users to register for over 50+ events, and the club admin can easily access the
+                    participants' list.</p>
+                <a href="#" class="btn">Ongoing</a>
+                <!-- <a href="#" class="btn">Demo</a> -->
+            </div>
+        </div>
     </section>
 
+    <!-- <section id="experience">
+        <h2>Experience</h2>
+        <div id="job">
+            <div id="company-logo">
+                <img class="logo" src="img/monbgodb.svg" alt="Starbucks Logo">
+                <p>March 2020 - April 2021</p>
+            </div>
+            <div id="job-details">
+                <h3>React.js Developer</h3>
+                <h4>Starbucks</h4>
+                <ul>
+                    <li>Developing and maintaining web applications using React.js and other related technologies.</li>
+                    <li>Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.</li>
+                    <li>Implementing responsive design and ensuring cross-browser compatibility.</li>
+                    <li>Participating in code reviews and providing constructive feedback to other developers.</li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
     <section id="experience">
         <h2>Experience</h2>
-        <p></p>
-    </section> -->
+        <div class="projects-container">
+            <div class="project-item">
+                <a href="https://sanpurple.com/" target="_blank"><img src="img/sanpurple.png" alt="sanpurple"
+                        class="img"></a>
+                <h3>Sanpurple Pvt.Ltd.</h3>
+                <h4>5th May, 2024 - 28th June, 2024</h4>
+                <p>As an intern at Sanpurple Company for 45 days, I developed and maintained landing pages, performed
+                    regular maintenance and updates, and collaborated with the core team to understand the entire
+                    development process.</p>
+                <a href="https://drive.google.com/file/d/1iSYgxqOlW9Q13gNid1wT6sSi_fqpQqLZ/view?pli=1" target="_blank"
+                    class="btn">Certificate</a>
+            </div>
+            <div class="project-item">
+                <a href="https://christuniversity.in/center/O/CONSULTING" target="_blank"><img src="img/cc.png"
+                        alt="CHrist Consulting" class="img"></a>
+                <h3>Christ Consulting</h3>
+                <h4>26th June, 2024 - Present</h4>
+                <p>Joined Christ Consulting as a Tech Tank Intern on June 26, 2024, for a one-year tenure; led website
+                    development projects and underwent extensive training in the latest web technologies to boost
+                    skillset and performance.</p>
+                <a href="#experience" class="btn">Ongoing</a>
+            </div>
+
+        </div>
+    </section>
+
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email : harshjangid015@gmail.com</p>
+        <iframe
+            data-tally-src="https://tally.so/embed/n9OqjQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy" width="100%" height="276" frameborder="0" marginheight="0" marginwidth="0" title="Contact form
+"></iframe>
+        <script>var d = document, w = "https://tally.so/widgets/embed.js", v = function () { "undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function (e) { e.src = e.dataset.tallySrc })) }; if ("undefined" != typeof Tally) v(); else if (d.querySelector('script[src="' + w + '"]') == null) { var s = d.createElement("script"); s.src = w, s.onload = v, s.onerror = v, d.body.appendChild(s); }</script>
     </section>
 
     <footer>
@@ -111,14 +249,15 @@
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             const changingText = document.querySelector('.changing-text');
-            const texts = ["Web Development", "UI/UX Design"];
+            const texts = ["Web Developer", "UI/UX Design"];
             let index = 0;
 
             setInterval(() => {
                 index = (index + 1) % texts.length;
                 changingText.textContent = texts[index];
-            }, 2000); // Change text every 2 seconds
+            }, 2000);
         });
     </script>
 </body>
+
 </html>
